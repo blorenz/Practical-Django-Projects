@@ -149,3 +149,6 @@ LOGGING = {
         },
     }
 }
+
+DELICIOUS_USER = 'blorenz'
+DELICIOUS_PASSWORD = 'colonel1'
