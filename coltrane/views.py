@@ -9,8 +9,7 @@ def entries_index(request):
 
 def category_detail(request, slug):
 	category = get_object_or_404(Category, slug=slug)
-	return object_list(request, queryset=category.entry_set.all(),
-			extra_context= {'category': category }))
+	return object_list(request, queryset=category.entry_set.all(), extra_context= {'category': category })
 
 
 def entry_detail(request, year, month, day, slug):
